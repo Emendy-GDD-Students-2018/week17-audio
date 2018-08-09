@@ -19,9 +19,10 @@ AudioMixerController:
   - guids:
     - 141f0035f5a714841b38c371783b9940
     - 2c89d09e8a8e29547b6a6aa2bd7dbca3
-    - 6d5d37039e746604e9e085cb1f9b3b2f
     - c9fc8fcd03bd6cb408cbaacc524775eb
     - 9935afe0444ef42498965edf7f3f8246
+    - a7cdf94d37c5671479342ce0d4adc426
+    - 6e7ab15eb1904e641aaaf7e49ef6331f
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -34,8 +35,9 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 141f0035f5a714841b38c371783b9940
   m_Children:
+  - {fileID: 243488069748403614}
+  - {fileID: 243992597163559826}
   - {fileID: 243515309498934240}
-  - {fileID: 243951865390728314}
   m_Volume: 2bd8c57b12117354eb5bd7e5cdb3a185
   m_Pitch: 401fced625adb8145b4329ca75ea08fb
   m_Effects:
@@ -67,6 +69,7 @@ AudioMixerSnapshotController:
   m_SnapshotID: 72e6a4d58bb348d4f88bf6913ddb2829
   m_FloatValues:
     8bd201e6c5a0bc843920d0cd3a0ee7f3: 0
+    2bd8c57b12117354eb5bd7e5cdb3a185: 0
   m_TransitionOverrides: {}
 --- !u!243 &243259553681883452
 AudioMixerGroupController:
@@ -81,6 +84,23 @@ AudioMixerGroupController:
   m_Pitch: e503bbc33f2104741a7ae3c56b32c5d3
   m_Effects:
   - {fileID: 244651617762764946}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243488069748403614
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Forest Ambient
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 6e7ab15eb1904e641aaaf7e49ef6331f
+  m_Children: []
+  m_Volume: 958c6403faa134c4a90c60e971a9d6d2
+  m_Pitch: 0212fac529a65b24892d75100a8a68d3
+  m_Effects:
+  - {fileID: 244937269351702740}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -121,19 +141,19 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
---- !u!243 &243951865390728314
+--- !u!243 &243992597163559826
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Ambient
+  m_Name: City Ambient
   m_AudioMixer: {fileID: 24100000}
-  m_GroupID: 6d5d37039e746604e9e085cb1f9b3b2f
+  m_GroupID: a7cdf94d37c5671479342ce0d4adc426
   m_Children: []
-  m_Volume: 83939699d7b5fac4894df80a1a284fd2
-  m_Pitch: bc6534b41f64a8747935464e51dd5a04
+  m_Volume: 371ef13396e7ba94a866293fa8d8fc62
+  m_Pitch: 0e1b03fd5da83144a980ea1dfc9f5ae9
   m_Effects:
-  - {fileID: 244472028440154138}
+  - {fileID: 244779872169110214}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -151,19 +171,6 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
---- !u!244 &244472028440154138
-AudioMixerEffectController:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_EffectID: 759ef2deef7784d45a48d18d9eac8e01
-  m_EffectName: Attenuation
-  m_MixLevel: e74081ae6915026438962fe13641665c
-  m_Parameters: []
-  m_SendTarget: {fileID: 0}
-  m_EnableWetMix: 0
-  m_Bypass: 0
 --- !u!244 &244651617762764946
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -177,6 +184,19 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &244779872169110214
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 00f939afd363d7c49958448eeb2e1248
+  m_EffectName: Attenuation
+  m_MixLevel: 32468722670cd7d4f926016f4e7342df
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244919410123084954
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -186,6 +206,19 @@ AudioMixerEffectController:
   m_EffectID: 660c16bff4b7e784aaad4b478f153d7a
   m_EffectName: Attenuation
   m_MixLevel: 7126b15f2fe53fc41a6e3f78fe6574c7
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244937269351702740
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Attenuation
+  m_EffectID: 60274c1d840b8574d9567dff1020fe58
+  m_EffectName: Attenuation
+  m_MixLevel: 92a4daca8885c834c8d69d866fda9e7d
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
