@@ -139,7 +139,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4387755335721764}
   - component: {fileID: 65099696599953918}
-  - component: {fileID: 114890581356947530}
   - component: {fileID: 82762934948319314}
   m_Layer: 0
   m_Name: City
@@ -242,6 +241,7 @@ GameObject:
   - component: {fileID: 4170829044888690}
   - component: {fileID: 33518382073253106}
   - component: {fileID: 23667794087601516}
+  - component: {fileID: 64361849143884816}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1701,6 +1701,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1919542553010514}
   m_Mesh: {fileID: 4300000, guid: f668990971414a64e8f069f201e7dc92, type: 3}
+--- !u!64 &64361849143884816
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537477423528884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 3378c17b48f3fbc40b08939e53c3a2a0, type: 3}
 --- !u!65 &65032866067457230
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1841,11 +1855,10 @@ AudioSource:
   m_GameObject: {fileID: 1354578845158268}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243992597163559826, guid: fe61a5079b60a494da0e6ca0a1d4e815,
-    type: 2}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0bef822f2e2d50b4baf759eac74206ce, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1929,16 +1942,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114890581356947530
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1354578845158268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab11ef6565a7484f8903549eb6187ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Group: {fileID: 243992597163559826, guid: fe61a5079b60a494da0e6ca0a1d4e815, type: 2}
-  m_FadeTime: 1
