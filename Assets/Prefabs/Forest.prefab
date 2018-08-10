@@ -138,7 +138,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4299992484264738}
   - component: {fileID: 65150730571195154}
-  - component: {fileID: 114153397291317128}
   - component: {fileID: 82784356028599180}
   m_Layer: 0
   m_Name: Forest
@@ -1055,8 +1054,7 @@ AudioSource:
   m_GameObject: {fileID: 1412762441603432}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243488069748403614, guid: fe61a5079b60a494da0e6ca0a1d4e815,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 06018c6c952081f479821dc51ae1e629, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1103,7 +1101,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.506
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1143,16 +1141,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114153397291317128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1412762441603432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab11ef6565a7484f8903549eb6187ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Group: {fileID: 243488069748403614, guid: fe61a5079b60a494da0e6ca0a1d4e815, type: 2}
-  m_FadeTime: 1
